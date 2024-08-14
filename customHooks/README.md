@@ -2,8 +2,8 @@
 
 <a id="table-of-contents"></a>
 
-<details>
-  <summary>Table of Contents</summary>
+# Table of Contents
+
   <ul>
     <li>
       <a href="#usedeepcompareeffect">useDeepCompareEffect</a>
@@ -12,7 +12,6 @@
        <li><a href="#usetitle">useTitle</a></li>
       <li><a href="#usewindowresize">useWindowResize</a></li>
   </ul>
-</details>
 
 <br />
 
@@ -45,7 +44,7 @@ export default useDeepCompareEffect;
 
 [🔝 Back to table of contents](#table-of-contents)
 <br />
-<br />
+
 This hook works like `useEffect` but performs a deep comparison of the dependencies using `lodash` `isEqual`. It helps when you have complex objects or arrays as dependencies and want to avoid unnecessary re-renders.
 
 ### Usage:
@@ -100,7 +99,6 @@ export default useEffectSkipFirst;
 
 [🔝 Back to table of contents](#table-of-contents)
 <br />
-<br />
 
 This hook skips the effect on the first render and only runs on subsequent renders when dependencies change. It is useful for scenarios where you don't want an effect to run during the initial render.
 
@@ -151,7 +149,6 @@ export default useTitle;
 
 [🔝 Back to table of contents](#table-of-contents)
 <br />
-<br />
 
 This hook updates the document's title and reverts it to the previous title when the component is unmounted.
 
@@ -198,7 +195,6 @@ export const useWindowResize = () => {
 ```
 
 [🔝 Back to table of contents](#table-of-contents)
-<br />
 <br />
 
 This hook tracks the window's width and height and returns the current size in real-time as the window is resized.
